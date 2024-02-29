@@ -1,0 +1,605 @@
+@media print{
+  body{
+    background-color: white;
+  }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #4CAF50; /* Green background color */
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-family: 'Arial Black', sans-serif; /* Different font */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo-img {
+    width: 70px; /* Ajusta el tamaño del logo según tus preferencias */
+    border-radius: 50%; /* Para hacer que la imagen sea redonda si el logo es redondo */
+    margin-right: 10px; /* Ajusta el margen según tus preferencias */
+  }
+    
+  .index-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+  
+  .pricing-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-shadow: 1px 1px 2px #000;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+    /* Estilos para la sección de pricing cards */
+  .pricing-cards-section {
+    background-image: url('./imgs/Bosque-Background.jpeg'); /* Ruta de tu imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-size: 100%; /* Cubre todo el ancho del contenedor */
+    color: #ffffff; /* Texto en color blanco para mayor legibilidad */
+    padding: 40px 0; /* Ajusta el espaciado según sea necesario */
+    
+  }
+   /* Estilo para la imagen de fondo de la primera pricing card */
+   .pricing-card:nth-child(1) {
+    background-image: url('./imgs/Bosque-Plan-Basic\ .jpeg');
+  }
+  
+  /* Estilo para la imagen de fondo de la segunda pricing card */
+  .pricing-card:nth-child(2) {
+    background-image: url('./imgs/Bosque-Plan-Premium.jpeg');
+  }
+  
+  /* Estilo para la imagen de fondo de la tercera pricing card */
+  .pricing-card:nth-child(3) {
+    background-image: url('./imgs/Bosque-Plan-PYMES.jpeg');
+  }
+  
+  /* Estilo para la imagen de fondo de la cuarta pricing card */
+  .pricing-card:nth-child(4) {
+    background-image: url('./imgs/Bosque-Plan-Personalized.jpeg');
+  }
+  
+  .pricing-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .pricing-card h3 {
+    color: #040404;
+  }
+  
+  .pricing-card p {
+    color: rgb(255, 255, 255)
+    
+  }
+  
+  .pricing-card button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    
+  }
+
+  /* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .footer-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  /* Agrega estilos para el botón Back to Top */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%; /* Alinea al centro */
+    transform: translateX(-50%); /* Ajusta para centrar */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom:40px ;
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #45a049;
+  }
+/* Sección Sobre Nosotros */
+  .about-us-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 40px;
+    text-align: center;
+    */
+    color: #333; 
+  }
+  
+  .about-us-section h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+    color: #ddd;
+    margin: 20px 0;
+  }
+  
+  .about-us-paragraph {
+    font-size: 1.2em;
+    font-weight: bold; /* Hace que el texto sea negrita */
+    color: #ddd; /* Color de texto gris claro */
+    text-shadow: 1px 1px 2px #000;
+    margin: 20px 0;
+  }
+  
+  .about-us-section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #4CAF50;
+    margin: 20px auto;
+  }
+  /* Estilos para la página de contacto */
+  .contact-container {
+    text-align: center; /* Centrar el texto dentro del contenedor principal */
+    background-image: url('./imgs/antártida.jpg'); /* Ruta de tu imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff; /* Texto en color blanco para mayor legibilidad */
+    padding: 20px; /* Ajusta el espaciado según sea necesario */
+    margin-top: -16px;
+  }
+/* Estilos para el formulario de contacto */
+.contact-form-section {
+    background-color: #45a049; /* Fondo circular verde */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto; /* Centrar el formulario y ajustar margen */
+    max-width: 400px; /* Establecer un ancho máximo */
+  }
+  textarea {
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 10px; /* Espacio interno para que el texto no esté justo en el borde */
+    border: 1px solid #ccc; /* Borde sutil */
+    box-shadow: inset 0 1px 3px #ddd; /* Sombra interior suave */
+    width: 100%; /* Ocupar el ancho disponible */
+    box-sizing: border-box; /* Para que el padding no aumente el tamaño total */
+  }
+  
+  .contact-form-section h2 {
+    font-size: 2em;
+    color: #fff; /* Texto blanco */
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label {
+    color: #fff; /* Texto blanco */
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre botones */
+    width: 100%;
+}
+
+.contact-container img{
+    display:block;
+    margin: 0 auto;
+    width: 150px;
+    height: auto;
+
+}
+/* Estilos para el texto después del formulario */
+.response-text-container {
+  padding: 20px; /* Ajusta el espaciado según sea necesario */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.response-text-main {
+  font-size: 24px; /* Tamaño del texto principal */
+  font-weight: bold; /* Texto en negrita para destacar el mensaje principal */
+  font-family: 'TuFuentePreferida', sans-serif; /* Reemplaza 'TuFuentePreferida' con la fuente que desees */
+  text-align: center; /* Centra el texto */
+  color: #333; /* Color del texto para mejorar el contraste */
+}
+
+.response-text-sub {
+  font-size: 16px; /* Tamaño del texto secundario */
+  font-family: 'TuFuentePreferida', sans-serif; /* Reemplaza 'TuFuentePreferida' con la fuente que desees */
+  text-align: center; /* Centra el texto */
+  color: #555; /* Color del texto secundario para mejorar el contraste */
+}
+
+
+  /* Estilos para la página de Investigacion*/
+
+.Investigacion-header h1 {
+  margin-bottom: 5px;
+}
+
+.Investigacion-header h2 {
+  margin-top: 2px;
+  font-size: 2em;
+}
+
+#investigacion-body h2 {
+  margin-top: 20px; /* Ajusta la distancia según sea necesario */
+  font-size: 1.5em;
+}
+
+#investigacion-body p {
+  margin-bottom: 20px; /* Ajusta la distancia entre párrafos */
+}
+.main-content {
+  background-color: #222; /* Color de fondo deseado */
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+  color: #fff; /* Color del texto dentro de la sección */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 20px;
+  margin-top: -16px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Ajusta según sea necesario */
+}
+/* Estilos del formulario de Investigacion*/
+.feedback-form-container {
+  background: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form-container h3 {
+  text-align: center;
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.feedback-form-container button {
+  width: 49%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.main-content h2 {
+  color: #fff; /* Color del texto dentro de la sección */
+}
+/* Edición de video para ajustarlo bien en la página Investigaciones */
+/* Estilo para centrar el video */
+.video-container {
+  text-align: center; /* Centra el contenido horizontalmente */
+  margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+/* Estilo adicional para el video dentro del contenedor */
+.video-container video {
+  display: inline-block; /* Permite centrar verticalmente */
+}
+
+/* styles.css */
+
+/* Estilos generales para la sección de Resumen */
+#resumen-body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilo del encabezado */
+.resumen-header {
+  background-color: #4CAF50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Estilo de la sección principal */
+.resumen-body {
+  background-image: url('./imgs/tu-imagen-de-fondo.jpg'); /* Ruta de tu imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el fondo */
+  background-position: center; /* Centra la imagen en el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  color: #fff; /* Texto en color blanco para mayor legibilidad */
+  padding: 20px; /* Ajusta el espaciado según sea necesario */
+  margin-top: -16px;
+}
+.resumen-main-content {
+  background-image: url('/imgs/arbol\ y\ tecnologia.png'); /* Reemplaza con la URL de tu imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 20px;
+  margin-top: -16px;
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75); /* Ajusta según sea necesario */
+
+}
+
+/* Estilo de cada artículo en el resumen */
+.resumen-article {
+  border: 2px solid #4CAF50;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1.8em; /* Puedes ajustar el tamaño según tus preferencias */
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+  color: #ddd;
+  margin: 20px 0;
+}
+
+.resumen-article h3 {
+  color: #4CAF50;
+  
+}
+
+/* Estilo del footer de la sección de Resumen */
+.resumen-footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Estilo del enlace en el footer */
+.resumen-footer .footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.resumen-footer .footer-link:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el reloj*/
+.location-container {
+  position: absolute;
+  top: 10px; /* Ajustar según sea necesario */
+  right: 10px;
+  font-size: 14px;
+  color: white;
+  /* Otros estilos... */
+}
+
+.clock-container {
+  position: absolute;
+  top: 30px; 
+  right: 10px;
+  font-size: 16px;
+  color: white;
+  /* Otros estilos... */
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  text-align: left;
+  padding: 8px;
+  text-shadow: 1px 1px 2px #000;
+}
+
+
+
+/* Media Queries */
+
+/* Para tabletas (menos de 768px) */
+@media (max-width: 768px) {
+  header {
+    padding: 15px;
+  }
+
+  .logo-img {
+    width: 50px;
+  }
+
+  .pricing-card {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-link {
+    margin: 5px 0;
+  }
+
+  .location-container, .clock-container {
+    right: 5px;
+    top: 5px;
+  }
+
+  .pricing-cards-section {
+    padding: 20px 0;
+  }
+
+  .about-us-paragraph {
+    font-size: 1em;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Para teléfonos móviles (menos de 480px) */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .pricing-card h3 {
+    font-size: 1.2em;
+  }
+
+  .pricing-card p {
+    font-size: 0.9em;
+  }
+
+  .footer-link {
+    font-size: 0.9em;
+  }
+
+  .about-us-paragraph {
+    font-size: 0.9em;
+  }
+}
+
+
+
+/* input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.valid {
+  border: 2px solid rgb(4, 255, 4);
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.input-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.icon-tick {
+  content: '✓';
+  color: green;
+}
+
+.icon-cross {
+  content: '✗';
+  color: red;
+} */
+input {
+  width: 100%;
+  padding: 10px;
+  padding-right: 30px; /* Espacio para el ícono */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.fa-circle-check, .fa-circle-xmark {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 1.2em;
+  visibility: hidden; /* Inicialmente ocultos */
+}
+
+.valid {
+  border: 2px solid green;
+}
+
+.invalid {
+  border: 2px solid red;
+}

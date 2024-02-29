@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Investigación - LifeSimplify</title>
+</head>
+<body id="investigacion-body">
+
+    <header class="Investigacion-header">
+        <div class="logo-container">
+            <img src="/imgs/Logo-1.jpeg" alt="LifeSimplify Logo" class="logo-img">
+        </div>
+        <h1>LifeSimplify</h1>
+        <h2>Investigaciones</h2>
+    </header>
+    <noscript>Tu procesador web no corre Javascript</noscript>
+    <section class="main-content" style="background-image: url('/imgs/desierto_amplio.jpg');">
+        <h2>Investigación en LifeSimplify</h2>
+        <p>
+            La investigación desempeña un papel fundamental en nuestra comprensión del mundo que nos rodea y en la mejora constante de nuestros conocimientos y prácticas. Nos impulsa a cuestionar, explorar y descubrir, brindándonos la capacidad de abordar desafíos, identificar oportunidades y avanzar en todos los ámbitos de la vida. Hacemos investigaciones para ampliar nuestros horizontes, resolver problemas, innovar y contribuir al progreso general de la sociedad. A través de la investigación, buscamos respuestas, creamos soluciones efectivas y construimos un camino hacia un futuro más informado, sostenible y enriquecedor.
+        </p>
+
+        <h3>"Impacto de la Inteligencia Artificial en la Mejora de la Calidad de Vida"</h3>
+        <p>
+            Contenido de Investigación:<br>
+            - Evaluación de estudios sobre el impacto positivo de la inteligencia artificial en la simplificación de tareas diarias.<br>
+            - Análisis de casos de éxito de empresas que utilizan IA para mejorar la experiencia del usuario.<br>
+            - Exploración de tecnologías emergentes y tendencias en inteligencia artificial aplicadas a la asistencia personalizada.
+        </p>
+        <h3>"Tendencias en Bienestar y Sostenibilidad en la Era Digital"</h3>
+        <p>
+            Contenido de Investigación:<br>
+            - Revisión de informes y estudios sobre las tendencias actuales en bienestar y sostenibilidad.<br>
+            - Identificación de demandas del mercado relacionadas con la simplificación de estilos de vida sostenibles.<br>
+            - Exploración de prácticas y soluciones innovadoras que promueven la sostenibilidad y el bienestar en el ámbito digital.
+        </p>
+
+        <h3>"Estrategias Efectivas de Marketing Digital para Plataformas de Asistencia Personalizada"</h3>
+        <p>
+            Contenido de Investigación:<br>
+            - Análisis de campañas de marketing digital exitosas en la industria de asistencia personalizada.<br>
+            - Estudio de las preferencias de los usuarios en la promoción de servicios de mejora de la calidad de vida.<br>
+            - Evaluación de canales de marketing eficaces y estrategias de contenido para llegar a la audiencia objetivo.
+        </p>
+
+        <div class="feedback-form-container">
+            <form id="feedbackForm">
+                <h3>¿Crees que deberíamos investigar acerca de otros temas?</h3>
+                <input type="text" id="name" placeholder="Nombre y Apellidos" required>
+                <input type="tel" id="phone" placeholder="Número de Teléfono" required>
+                <input type="email" id="email" placeholder="Correo Electrónico (Opcional)">
+                <textarea id="suggestion" placeholder="Sobre lo que crees que deberíamos investigar" required></textarea>
+                <button type="button" onclick="submitForm()">Enviar</button>
+                <button type="reset">Borrar</button>
+            </form>
+        </div>
+
+        <div class="video-container">
+            <video id="videoPlayer" width="560" height="315" controls>
+                <source src="/vds/Video laboratorio editado.mp4" type="video/mp4">
+                <source src="/vds/loros.mp4" type="video/mp4">
+                Tu navegador no soporta el elemento de video.
+            </video>
+            <div class="video-controls">
+                <button id="btnRetroceder">Retroceder 10s</button>
+                <button id="btnAvanzar">Avanzar 10s</button>
+                <button id="btnVideoAnterior">Video Anterior</button>
+                <button id="btnVideoSiguiente">Video Siguiente</button>
+            </div>
+        </div>
+        
+    </section>
+
+  <button id="backToTopBtn" onclick="scrollToTop()">Back to Top ↥</button>
+
+    <footer>
+        <div class="footer-container">
+          <a href="Investigacion.html" class="footer-link">Investigación</a>
+          <a href="resumen.html" class="footer-link">Resumen</a>
+          <a href="index.html" class="footer-link">Índice</a>
+          <!-- <a href="privacy.html" class="footer-link">Privacidad de Datos</a>
+          <a href="pricing.html" class="footer-link">Documentos de Precios</a> -->
+          <a href="contact.html" class="footer-link">Contacto</a>
+          <a href="preferencias.html" class="footer-link">Preferencias</a>
+          <!-- Redes Sociales  -->
+        <a href="https://www.instagram.com" class="footer-link" target="_blank">Instagram</a>
+        <a href="https://www.youtube.com" class="footer-link" target="_blank">YouTube</a>
+        <a href="https://www.github.com" class="footer-link" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <script src="./js/script-filtrado.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
+    <script src="./js/controller.js"></script>
+
+</body>
+</html>

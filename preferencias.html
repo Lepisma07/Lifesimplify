@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Saludo y Preferencias</title>
+  <link rel="stylesheet" href="preferencias.css">
+</head>
+<body>
+
+<div class="container" id="preferencesSection">
+  <h2>Configura tus Preferencias</h2>
+  <form id="preferencesForm">
+    <label for="userName">Nombre del Usuario:</label>
+    <input type="text" id="userName" name="userName" required>
+    <label for="bgColor">Color de Fondo:</label>
+    <input type="color" id="bgColor" name="bgColor" required>
+    <label for="textColor">Color de Texto:</label>
+    <input type="color" id="textColor" name="textColor" required>
+    <button type="submit">Guardar Preferencias</button>
+  </form>
+</div>
+
+<div class="container" id="greetingSection" style="display: none;">
+  <h1 id="greeting">¡Hola!</h1>
+  <button onclick="clearPreferences()">Borrar Preferencias</button>
+</div>
+
+<script src="./js/preferencias.js"></script>
+</body>
+</html>

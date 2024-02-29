@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeSimplify - Plans</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="/imgs/Logo-1.jpeg" alt="Logo" class="logo-img">
+    </div>
+    <h1>LifeSimplify</h1>
+    <p>Streamlining Your Life with Simplified Software Solutions</p>
+    <div id="userLocation" class="location-container"></div>
+    <div id="liveClock" class="clock-container"></div>
+  </header>
+  <noscript>Tu procesador web no corre Javascript</noscript>
+    <div class="index-container">
+      
+      <section class="pricing-cards-section">
+        <div class="pricing-card" id="PlanBasico">
+          <h3>Plan Básico</h3>
+          <p>Precio Mensual: 9,99 €</p>
+          <p>Precio Anual (con descuento): 99,99 €</p>
+          <button>Select Plan</button>
+        </div>
+
+        <div class="pricing-card" id="PlanPremium">
+          <h3>Plan Premium</h3>
+          <p>Precio Mensual: 19,99 €</p>
+          <p>Precio Anual (con descuento): 199,99 €</p>
+          <button>Select Plan</button>
+        </div>
+
+        <div class="pricing-card" id="PlanEmpresarial">
+          <h3>Plan Empresarial (para PYMES)</h3>
+          <p>Precio Mensual: 29,99 € por usuario</p>
+          <p>Precio Anual (con descuento): 299,99 € por usuario</p>
+          <button>Select Plan</button>
+        </div>
+
+        <div class="pricing-card" id="PlanPersonalizado">
+          <h3>Plan Personalizado</h3>
+          <p>(Personalizado según las necesidades específicas de la empresa.)</p>
+          <a href="./contact.html">
+            <button id="contactBtn"> Contact Us</button>
+          </a>
+        </div>
+      </section>
+      <!-- Nueva sección de cálculo -->
+      <section class="calculation-section">
+        <h2>¿Quieres saber cuál es el plan que te sale más rentable?</h2>
+        <p>Indica tus ingresos para obtener una recomendación:</p>
+  
+        <input type="number" id="incomeInput" placeholder="Indica tus ingresos (en euros)" min="0">
+        <select id="incomeType">
+          <option value="monthly">Mensual</option>
+          <option value="annual">Anual</option>
+        </select>
+        <button onclick="recommendPlan()">Obtener Recomendación</button>
+
+        <p id="recommendationResult"></p>
+        <button id="gotoPlanBtn" style="display: none;">Ir al Plan Recomendado</button>
+</section>
+      <section class="about-us-section">
+        <h2 style="font-size: 2em; text-align: center;">Sobre Nosotros</h2>
+
+        <p class="about-us-paragraph">
+          <strong>Nuestro Propósito</strong><br>
+          En un mundo cada vez más acelerado y complejo, nos
+          encontramos constantemente abrumados por la cantidad de
+          tareas y decisiones que debemos tomar a diario. LifeSimplify
+          surge como la solución integral para simplificar y mejorar la
+          calidad de vida de las personas en su día a día.
+        </p>
+          
+        <p class="about-us-paragraph">
+          <strong>Compromiso</strong><br>
+          En LifeSimplify, nos dedicamos a crear herramientas y
+          soluciones que reduzcan la complejidad y el estrés en la vida
+          cotidiana. Nos esforzamos por ofrecer productos y servicios
+          innovadores que permitan a las personas concentrarse en lo
+          que realmente importa: vivir el presente y disfrutar de la vida.
+        </p>
+            <!-- Agrega más párrafos según sea necesario -->
+      </section>
+
+    </div>
+
+
+
+    <!-- Botón back to top, lo que hace es un suave barrido hacia arriba y pone el foco en el inicio de la página.-->
+  <button id="backToTopBtn" onclick="scrollToTop()">Back to Top ↥</button>
+
+  <footer>
+    <div class="footer-container">
+      <a href="Investigacion.html" class="footer-link">Investigación</a>
+      <a href="resumen.html" class="footer-link">Resumen</a>
+      <a href="index.html" class="footer-link">Índice</a>
+      <!-- <a href="privacy.html" class="footer-link">Privacidad de Datos</a>
+      <a href="pricing.html" class="footer-link">Documentos de Precios</a> -->
+      <a href="contact.html" class="footer-link">Contacto</a>
+      <a href="preferencias.html" class="footer-link">Preferencias</a>
+      <!-- Redes Sociales  -->
+      <a href="https://www.instagram.com" class="footer-link" target="_blank">Instagram</a>
+      <a href="https://www.youtube.com" class="footer-link" target="_blank">YouTube</a>
+      <a href="https://www.github.com" class="footer-link" target="_blank">GitHub</a>
+    </div>
+  </footer>
+  <script src="./js/reloj.js"></script>
+  <script src="./js/recomendation.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="./js/effect-movement.js"></script>
+</body>
+</html>
